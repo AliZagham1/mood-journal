@@ -54,7 +54,7 @@ export default function StatsPage() {
 
   return (
     <>
-      {entries.length > 0 && (
+      {entries.length > 0 ? (
         <div className="mt-10 bg-white shadow-md rounded-lg p-6 w-full">
           <h2 className="text-xl font-semibold text-gray-700 mb-4">
             📈 Mood Trend
@@ -85,7 +85,7 @@ export default function StatsPage() {
                         Mood: {moodValue} {getMoodEmoji(moodValue)}
                       </p>
                     </div>
-                  );
+                  )
                 }}
               />
               <Line
@@ -139,6 +139,25 @@ export default function StatsPage() {
           </div>
         </div>
         
+      ) : (
+
+        <div className="mt-10 bg-white shadow-md rounded-lg p-6 w-full text-center">
+        <h2 className="text-xl font-semibold text-gray-700 mb-4">
+          📭 No mood data yet
+        </h2>
+        <p className="text-gray-500 mb-6">
+          Start adding entries to see your mood trends over time.
+        </p>
+        <Link
+          href="/"
+          className="block text-center text-sm text-gray-500 hover:text-gray-700"
+        >
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Go Back to Home
+          </button>
+        </Link>
+      </div>
+
       )}
     </>
   );
