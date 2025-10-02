@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Mood Journal
 
-## Getting Started
+A full-stack Mood Tracking App built with Next.js, MongoDB, and Gemini AI.
+Users can record their mood, add notes, and receive AI-powered reflections. The app also provides a history view and mood trend statistics.
 
-First, run the development server:
+# 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+✅ Add daily mood entries (1–10 scale) with optional notes
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🤖 AI-generated reflection for each entry (Gemini API)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📜 History page with all past entries
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📊 Statistics page with mood trends (charts + emojis)
 
-## Learn More
+🗑️ Delete entries with a confirmation modal
 
-To learn more about Next.js, take a look at the following resources:
+🎨 Clean UI built with Tailwind CSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 🛠️ Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Frontend: Next.js (App Router) + React
 
-## Deploy on Vercel
+Styling: Tailwind CSS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Database: MongoDB (via Mongoose)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+AI: Google Gemini API (@google/genai)
+
+Charts: Recharts
+
+Notifications: react-hot-toast
